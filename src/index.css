@@ -16,6 +16,6 @@ body{
 
 @layer components {
     .primary-btn {
-      @apply bg-secondary text-white font-semibold md:py-3 md:px-6 py-1 px-3 rounded-md hover:!scale-110 duration-300;
+      @apply bg-secondary text-white font-semibold md:py-3 md:px-6 lg:py-4 lg:px-8 py-1 px-3 rounded-md hover:!scale-110 duration-300;
     }
   }
