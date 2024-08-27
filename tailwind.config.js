@@ -1,19 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero1': "url('./img/hero/hero1.jpg')"
+      },
       colors: {
         primary: "#76453B",
         secondary: "#43766C",
-        lightBrown:'#B19470'
+        lightBrown: "#B19470",
       },
+
       fontFamily: {
-        petrona : ['Petrona','serif'],
-        boogaloo: ['Boogaloo','serif']
+        petrona: ["Petrona", "serif"],
+        boogaloo: ["Boogaloo", "serif"],
       },
       container: {
         center: true,
@@ -28,5 +30,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};

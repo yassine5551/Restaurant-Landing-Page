@@ -12,10 +12,10 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="container flex justify-between items-center ">
+      <nav className="container flex justify-between items-center">
         {/* logo section */}
-        <div>
-          <img src={logo} className="w-[80px] " alt="" />
+        <div className="w-[80px] h-[80px] ">
+          <img src={logo}  alt="" />
         </div>
         {/* navlinks section */}
         <div className="hidden md:block">
