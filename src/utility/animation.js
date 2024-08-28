@@ -26,7 +26,10 @@ export const SlideUp = (delay) => {
         transition: {
           duration: 1,
           delay: delay,
+          ease: "easeIn"
+          
         },
+        
       },
     };
   };
