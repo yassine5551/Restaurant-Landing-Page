@@ -1,3 +1,7 @@
+import chef1  from '../img/chef/chef1.png'
+import chef2  from '../img/chef/chef2.png'
+import chef3  from '../img/chef/chef3.png'
+import chef4  from '../img/chef/chef4.png'
 export const navLinks = [
   {
     id: 1,
@@ -29,7 +33,7 @@ export const navLinks = [
 export const FoodData = [
   {
     id: 1,
-    delay:0.8,
+    delay: 0.8,
     name: "Pizza",
     price: 10.99,
     category: "Main Course",
@@ -38,7 +42,7 @@ export const FoodData = [
   },
   {
     id: 2,
-    delay:0.8,
+    delay: 0.8,
     name: "Steak",
     price: 14.99,
     category: "Main Course",
@@ -47,7 +51,7 @@ export const FoodData = [
   },
   {
     id: 3,
-    delay:0.8,
+    delay: 0.8,
     name: "Bastilla",
     price: 24.99,
     category: "Main Course",
@@ -56,7 +60,7 @@ export const FoodData = [
   },
   {
     id: 4,
-    delay:0.8,
+    delay: 0.8,
     name: "Couscous",
     price: 16.99,
     category: "Main Course",
@@ -65,7 +69,7 @@ export const FoodData = [
   },
   {
     id: 5,
-    delay:0.8,
+    delay: 0.8,
     name: "Tagine",
     price: 20.99,
     category: "Main Course",
@@ -74,7 +78,7 @@ export const FoodData = [
   },
   {
     id: 6,
-    delay:0.8,
+    delay: 0.8,
     name: "Veggie Wrap",
     price: 12.99,
     category: "Main Course",
@@ -83,7 +87,7 @@ export const FoodData = [
   },
   {
     id: 7,
-    delay:0.8,
+    delay: 0.8,
     name: "Salad",
     price: 8.99,
     category: "Side Dish",
@@ -92,7 +96,7 @@ export const FoodData = [
   },
   {
     id: 8,
-    delay:0.8,
+    delay: 0.8,
     name: "Fries",
     price: 4.99,
     category: "Side Dish",
@@ -101,7 +105,7 @@ export const FoodData = [
   },
   {
     id: 9,
-    delay:0.8,
+    delay: 0.8,
     name: "Onion Rings",
     price: 5.99,
     category: "Side Dish",
@@ -110,7 +114,7 @@ export const FoodData = [
   },
   {
     id: 10,
-    delay:0.8,
+    delay: 0.8,
     name: "Coleslaw",
     price: 3.99,
     category: "Side Dish",
@@ -119,7 +123,7 @@ export const FoodData = [
   },
   {
     id: 11,
-    delay:0.8,
+    delay: 0.8,
     name: "Garlic Bread",
     price: 6.99,
     category: "Side Dish",
@@ -128,7 +132,7 @@ export const FoodData = [
   },
   {
     id: 12,
-    delay:0.8,
+    delay: 0.8,
     name: "Ice Cream",
     price: 6.99,
     category: "Dessert",
@@ -137,7 +141,7 @@ export const FoodData = [
   },
   {
     id: 13,
-    delay:0.8,
+    delay: 0.8,
     name: "Cheesecake",
     price: 8.99,
     category: "Dessert",
@@ -146,7 +150,7 @@ export const FoodData = [
   },
   {
     id: 14,
-    delay:0.8,
+    delay: 0.8,
     name: "Tiramisu",
     price: 9.99,
     category: "Dessert",
@@ -155,7 +159,7 @@ export const FoodData = [
   },
   {
     id: 15,
-    delay:0.8,
+    delay: 0.8,
     name: "Brownie",
     price: 7.99,
     category: "Dessert",
@@ -164,7 +168,7 @@ export const FoodData = [
   },
   {
     id: 16,
-    delay:0.8,
+    delay: 0.8,
     name: "Fruit Salad",
     price: 8.99,
     category: "Dessert",
@@ -197,5 +201,28 @@ export const aboutData = [
     title: "Our Commitment",
     delay: 1,
     desc: "We are dedicated to providing an exceptional dining experience for every guest. Our mission is to serve high-quality, delicious food with a focus on sustainability and local sourcing. We believe in supporting our community and are proud to be a part of Agadir’s vibrant culinary scene.",
+  },
+];
+
+export const chefImgs = [
+  {
+    id: 1,
+    image:chef1
+   
+  },
+  {
+    id: 2,
+    image:chef2
+    
+  },
+  {
+    id: 3,
+    image:chef3
+    
+  },
+  {
+    id: 4,
+    image: chef4
+    
   },
 ];
