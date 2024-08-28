@@ -25,7 +25,8 @@ const Header = () => {
                 className="font-medium font-petrona text-lightBrown cursor-pointer hover:text-primary text-lg lg:text-xl"
                 key={item.id}
               >
-                {item.title}
+                <a href={item.link}>{item.title}</a>
+                
               </li>
             ))}
           </ul>

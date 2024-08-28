@@ -6,7 +6,7 @@ import { SlideRight,SlideDown } from "../../utility/animation";
 const About = () => {
   return (
     <>
-      <div className="container mt-[120px]">
+      <div className="container">
         <motion.h1 variants={SlideDown(0.5)} initial='hidden' whileInView='visible' className="font-petrona font-semibold text-[30px] sm:text-[40px]  md:text-[50px] lg:text-[60px] xl:text-[70px] text-secondary mb-[30px] tracking-widest">Discover Our Story</motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           

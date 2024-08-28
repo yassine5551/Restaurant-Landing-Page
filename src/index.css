@@ -13,6 +13,13 @@
 body{
     background-color: #F8F3F2;
 }
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+section{
+  scroll-snap-align: center;
+}
 
 @layer components {
     .primary-btn {
