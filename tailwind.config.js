@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero1': "url('./img/hero/hero1.jpg')"
+        'hero1': "url('./img/hero/hero1.jpg')",
+        'bg-chef':"url('./img/chef/chef.jpg')"
       },
       colors: {
         primary: "#76453B",
