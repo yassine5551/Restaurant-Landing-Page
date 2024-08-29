@@ -13,7 +13,7 @@ const Gallery = () => {
           initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            transition: { duration: 1.2, delay: 0.6 },
+            transition: { duration: 1.2, delay: 0.4 },
           }}
           viewport={{ once: true }}
           className="text-secondary font-petrona font-semibold text-[50px]"
@@ -23,7 +23,7 @@ const Gallery = () => {
 
         <div class="parent">
           <motion.div
-            variants={SlideRight(0.6)}
+            variants={SlideRight(0.4)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -66,7 +66,7 @@ const Gallery = () => {
             />
           </motion.div>
           <motion.div
-            variants={SlideLeft(0.6)}
+            variants={SlideLeft(0.4)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
