@@ -1,5 +1,5 @@
 import React from "react";
-
+import map from '../../img/map/map.png'
 const Form = () => {
   return (
     <>
@@ -93,6 +93,9 @@ const Form = () => {
           </div>
         </div>
       </section>
+      <div className="container flex justify-center items-center">
+        <img src={map} alt="" />
+      </div>
     </>
   );
 };
