@@ -15,6 +15,7 @@ const Gallery = () => {
             opacity: 1,
             transition: { duration: 1.2, delay: 0.6 },
           }}
+          viewport={{ once: true }}
           className="text-secondary font-petrona font-semibold text-[50px]"
         >
           Gallery
@@ -25,6 +26,7 @@ const Gallery = () => {
             variants={SlideRight(0.6)}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="div1"
           >
             <img
@@ -39,6 +41,7 @@ const Gallery = () => {
               opacity: 1,
               transition: { duration: 1.2, delay: 0.4 },
             }}
+            viewport={{ once: true }}
             className="div2"
           >
             <img
@@ -53,6 +56,7 @@ const Gallery = () => {
               opacity: 1,
               transition: { duration: 1.2, delay: 0.4 },
             }}
+            viewport={{ once: true }}
             className="div3"
           >
             <img
@@ -65,6 +69,7 @@ const Gallery = () => {
             variants={SlideLeft(0.6)}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="div4"
           >
             <img

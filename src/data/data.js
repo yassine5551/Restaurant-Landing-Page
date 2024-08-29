@@ -1,7 +1,7 @@
-import chef1  from '../img/chef/chef1.png'
-import chef2  from '../img/chef/chef2.png'
-import chef3  from '../img/chef/chef3.png'
-import chef4  from '../img/chef/chef4.png'
+import chef1 from "../img/chef/chef1.png";
+import chef2 from "../img/chef/chef2.png";
+import chef3 from "../img/chef/chef3.png";
+import chef4 from "../img/chef/chef4.png";
 export const navLinks = [
   {
     id: 1,
@@ -33,7 +33,7 @@ export const navLinks = [
 export const FoodData = [
   {
     id: 1,
-    delay: 0.8,
+    delay: 0.3,
     name: "Pizza",
     price: 10.99,
     category: "Main Course",
@@ -42,7 +42,7 @@ export const FoodData = [
   },
   {
     id: 2,
-    delay: 0.8,
+    delay: 0.3,
     name: "Steak",
     price: 14.99,
     category: "Main Course",
@@ -51,7 +51,7 @@ export const FoodData = [
   },
   {
     id: 3,
-    delay: 0.8,
+    delay: 0.3,
     name: "Bastilla",
     price: 24.99,
     category: "Main Course",
@@ -60,7 +60,7 @@ export const FoodData = [
   },
   {
     id: 4,
-    delay: 0.8,
+    delay: 0.3,
     name: "Couscous",
     price: 16.99,
     category: "Main Course",
@@ -69,7 +69,7 @@ export const FoodData = [
   },
   {
     id: 5,
-    delay: 0.8,
+    delay: 0.3,
     name: "Tagine",
     price: 20.99,
     category: "Main Course",
@@ -78,7 +78,7 @@ export const FoodData = [
   },
   {
     id: 6,
-    delay: 0.8,
+    delay: 0.3,
     name: "Veggie Wrap",
     price: 12.99,
     category: "Main Course",
@@ -87,7 +87,7 @@ export const FoodData = [
   },
   {
     id: 7,
-    delay: 0.8,
+    delay: 0.3,
     name: "Salad",
     price: 8.99,
     category: "Side Dish",
@@ -96,7 +96,7 @@ export const FoodData = [
   },
   {
     id: 8,
-    delay: 0.8,
+    delay: 0.3,
     name: "Fries",
     price: 4.99,
     category: "Side Dish",
@@ -105,7 +105,7 @@ export const FoodData = [
   },
   {
     id: 9,
-    delay: 0.8,
+    delay: 0.3,
     name: "Onion Rings",
     price: 5.99,
     category: "Side Dish",
@@ -114,7 +114,7 @@ export const FoodData = [
   },
   {
     id: 10,
-    delay: 0.8,
+    delay: 0.3,
     name: "Coleslaw",
     price: 3.99,
     category: "Side Dish",
@@ -123,7 +123,7 @@ export const FoodData = [
   },
   {
     id: 11,
-    delay: 0.8,
+    delay: 0.3,
     name: "Garlic Bread",
     price: 6.99,
     category: "Side Dish",
@@ -132,7 +132,7 @@ export const FoodData = [
   },
   {
     id: 12,
-    delay: 0.8,
+    delay: 0.3,
     name: "Ice Cream",
     price: 6.99,
     category: "Dessert",
@@ -141,7 +141,7 @@ export const FoodData = [
   },
   {
     id: 13,
-    delay: 0.8,
+    delay: 0.3,
     name: "Cheesecake",
     price: 8.99,
     category: "Dessert",
@@ -150,7 +150,7 @@ export const FoodData = [
   },
   {
     id: 14,
-    delay: 0.8,
+    delay: 0.3,
     name: "Tiramisu",
     price: 9.99,
     category: "Dessert",
@@ -159,7 +159,7 @@ export const FoodData = [
   },
   {
     id: 15,
-    delay: 0.8,
+    delay: 0.3,
     name: "Brownie",
     price: 7.99,
     category: "Dessert",
@@ -168,7 +168,7 @@ export const FoodData = [
   },
   {
     id: 16,
-    delay: 0.8,
+    delay: 0.3,
     name: "Fruit Salad",
     price: 8.99,
     category: "Dessert",
@@ -181,25 +181,25 @@ export const aboutData = [
   {
     id: 1,
     title: "Our story",
-    delay: 0.6,
+    delay: 0.5,
     desc: "Founded in 2018, Master Chef has been a culinary landmark in Agadir. Our journey began with a passion for Moroccan cuisine and a commitment to bringing authentic flavors to our community. Over the years, we’ve grown from a humble eatery to a beloved dining destination, where every meal tells a story.",
   },
   {
     id: 2,
     title: "Our Cuisine",
-    delay: 0.8,
+    delay: 0.6,
     desc: "At Master Chef, we specialize in Moroccan cuisine, offering a menu that blends tradition with creativity. Our chefs carefully select the finest ingredients, ensuring that every dish is a true reflection of Moroccan culinary excellence. From classic recipes to modern twists, our food is prepared with love and respect for the art of cooking.",
   },
   {
     id: 3,
     title: "Our Atmosphere",
-    delay: 0.9,
+    delay: 0.7,
     desc: "Step into Master Chef and be transported to a warm and inviting space that captures the essence of Moroccan culture. Whether you’re dining with family, friends, or colleagues, our cozy ambiance and attentive service make every visit special. We’ve created an environment where you can relax, unwind, and enjoy a memorable meal.",
   },
   {
     id: 4,
     title: "Our Commitment",
-    delay: 1,
+    delay: 0.8,
     desc: "We are dedicated to providing an exceptional dining experience for every guest. Our mission is to serve high-quality, delicious food with a focus on sustainability and local sourcing. We believe in supporting our community and are proud to be a part of Agadir’s vibrant culinary scene.",
   },
 ];
@@ -207,22 +207,18 @@ export const aboutData = [
 export const chefImgs = [
   {
     id: 1,
-    image:chef1
-   
+    image: chef1,
   },
   {
     id: 2,
-    image:chef2
-    
+    image: chef2,
   },
   {
     id: 3,
-    image:chef3
-    
+    image: chef3,
   },
   {
     id: 4,
-    image: chef4
-    
+    image: chef4,
   },
 ];

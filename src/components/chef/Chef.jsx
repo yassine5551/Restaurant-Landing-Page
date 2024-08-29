@@ -22,6 +22,7 @@ const Chef = () => {
           variants={SlideRight(0.4)}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
           className="w-[300px] h-[520px] lg:w-[440px] lg:h-[660px] rounded-md"
           src={chef}
           alt=""
@@ -33,6 +34,7 @@ const Chef = () => {
             variants={SlideLeft(0.4)}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className=" md:text-start  font-petrona font-medium text-[40px] md:text-[40px] text-lightBrown "
           >
             Chef Ahmed El Mansouri
@@ -41,6 +43,7 @@ const Chef = () => {
             variants={SlideLeft(0.6)}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="font-petrona text-lightBrown/80 text-[20px] md:text-start text-center"
           >
             <span className="text-secondary">Chef Ahmed El Mansouri</span>, with
@@ -56,22 +59,22 @@ const Chef = () => {
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12">
             <motion.button
-              variants={SlideLeft(0.7)}
-              initial="hidden"
-              whileInView="visible"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
               className="primary-btn"
+              viewport={{ once: true }}
             >
               Reserve Your Table
             </motion.button>
             <motion.button
-              variants={SlideLeft(0.8)}
-              initial="hidden"
-              whileInView="visible"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
+              viewport={{ once: true }}
               href=""
               onClick={toggle}
               className=" underline text-secondary font-petrona italic text-sm sm:text-lg md:text-xl lg:text-2xl flex justify-center items-center gap-2"
             >
-              Our chefs <FaArrowRight className="text-sm" />{" "}
+              Our chefs <FaArrowRight className="text-sm" />
             </motion.button>
           </div>
         </div>
@@ -84,6 +87,7 @@ const Chef = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.3 }}
+              viewport={{ once: true }}
               className="mt-6 bg-lime-300/50 rounded-xl   w-4/5 h-full  flex justify-center items-center  relative"
             >
               <button
