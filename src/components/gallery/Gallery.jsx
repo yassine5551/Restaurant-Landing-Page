@@ -1,8 +1,8 @@
 import React from "react";
 import g1 from "../../img/gallery/g1.jpg";
-import g2 from "../../img/gallery/g2.jpg";
-import g3 from "../../img/gallery/g3.jpg";
-import g4 from "../../img/gallery/g4.jpg";
+import g2 from "../../img/gallery/g2.webp";
+import g3 from "../../img/gallery/g3.webp";
+import g4 from "../../img/gallery/g4.webp";
 import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../../utility/animation";
 const Gallery = () => {
