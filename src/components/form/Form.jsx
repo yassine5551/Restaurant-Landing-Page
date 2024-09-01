@@ -1,6 +1,28 @@
-import React from "react";
-
+import { React, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 const Form = () => {
+  const form = useRef();
+  const [submissionMessage, setSubmissionMessage] = useState("");
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_6y9q8pn", "template_cpjj3q8", form.current, {
+        publicKey: "Qeg9LwtRSo-r5xkyG",
+      })
+      .then(
+        () => {
+          setSubmissionMessage("Your message has been sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          setSubmissionMessage(
+            "Failed to send the message. Please try again later."
+          );
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <>
       <section className="">
@@ -14,28 +36,26 @@ const Form = () => {
               </p>
 
               <div className="mt-8 text-2xl font-bold text-black/80">
-                
-                  
-                  06 82 26 95 09
-                
-
+                06 82 26 95 09
                 <address className="mt-2 not-italic text-secondary">
-                  Agadir, <span className="text-lightBrown">MAROC</span> 
+                  Agadir, <span className="text-lightBrown">MAROC</span>
                 </address>
               </div>
             </div>
 
             <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="#" className="space-y-4">
+              <form ref={form} onSubmit={sendEmail} className="space-y-4">
                 <div>
                   <label className="sr-only" htmlFor="name">
                     Name
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="w-full rounded-lg border-gray-200 p-3 text-medium"
                     placeholder="Name"
                     type="text"
                     id="name"
+                    name="user_name"
+                    required
                   />
                 </div>
 
@@ -45,10 +65,11 @@ const Form = () => {
                       Email
                     </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border-gray-200 p-3 text-medium"
                       placeholder="Email address"
                       type="email"
                       id="email"
+                      name="user_email"
                     />
                   </div>
 
@@ -57,15 +78,30 @@ const Form = () => {
                       Phone
                     </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border-gray-200 p-3 text-medium"
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
+                      name="user-number"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="sr-only" htmlFor="phone">
+                      Guest
+                    </label>
+                    <input
+                      className="w-full rounded-lg border-gray-200 p-3 text-medium"
+                      placeholder="How many guest"
+                      type="number"
+                      id="guest"
+                      name="user_guest"
+                      min={1}
+                      max={7}
+                      defaultValue={1}
                     />
                   </div>
                 </div>
-
-                
 
                 <div>
                   <label className="sr-only" htmlFor="message">
@@ -73,27 +109,31 @@ const Form = () => {
                   </label>
 
                   <textarea
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="w-full rounded-lg border-gray-200 p-3 text-medium"
                     placeholder="Message"
                     rows="8"
                     id="message"
+                    name="message"
                   ></textarea>
                 </div>
 
-                <div className="mt-4">
+                <div className="my-4">
                   <button
+                    value="Send"
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-secondary font-petrona px-5 py-3 font-medium text-white sm:w-auto"
+                    className="inline-block w-full rounded-lg bg-green-800 font-petrona px-5 py-3 font-medium text-white sm:w-auto hover:bg-green-700"
                   >
                     Send Enquiry
                   </button>
                 </div>
+                <p className="text-center text-green-700 font-semibold font-boogaloo text-xl md:text-2xl">
+                  {submissionMessage}
+                </p>
               </form>
             </div>
           </div>
         </div>
       </section>
-     
     </>
   );
 };
