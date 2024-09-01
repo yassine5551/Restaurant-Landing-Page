@@ -5,6 +5,26 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FaXmark } from "react-icons/fa6";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
+const navVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      duration:1.2,
+      ease:'easeIn'
+    },
+  },
+};
+
+const navChildren = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -12,30 +32,48 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="container flex justify-between items-center">
+      <motion.nav
+        variants={navVariants}
+        initial="hidden"
+        animate="visible"
+        className="container flex justify-between items-center h-10 py-9"
+      >
         {/* logo section */}
-        <div className="w-[80px] h-[80px] ">
-          <img src={logo}  alt="" />
+        <div className="cursor-pointer">
+          <h1 className="font-boogaloo text-3xl text-center text-lightBrown underline hover:ml-6 transition-all ease-in-out">
+            <span className="text-secondary underline">Master Chef</span>
+            Andalouse
+          </h1>
         </div>
         {/* navlinks section */}
         <div className="hidden md:block">
-          <ul className="flex justify-center items-center gap-9">
+          <motion.ul
+            variants={navVariants}
+            initial="hidden"
+            animate="visible"
+            className="flex justify-center items-center gap-9"
+          >
             {navLinks.map((item) => (
-              <li
-                className="font-medium font-petrona text-lightBrown cursor-pointer hover:text-primary text-lg lg:text-xl"
+              <motion.li
+                variants={navChildren}
+                className="relative group font-semibold font-petrona text-lightBrown cursor-pointer hover:text-primary text-lg lg:text-xl transition-all ease-in-out"
                 key={item.id}
               >
+                <div className="absolute bg-lightBrown w-[0%] group-hover:w-full h-[2.5px]  bottom-0 transition-all" ></div>
                 <a href={item.link}>{item.title}</a>
-                
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
         {/* hamburger menu */}
-        <div onClick={toggle} className="md:hidden text-primary text-3xl">
+        <motion.div
+          variants={navChildren}
+          onClick={toggle}
+          className="md:hidden text-primary text-3xl"
+        >
           {isOpen ? <FaXmark /> : <RxHamburgerMenu />}
-        </div>
-      </nav>
+        </motion.div>
+      </motion.nav>
       <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
@@ -52,7 +90,8 @@ const Header = () => {
                     className="font-medium font-petrona cursor-pointer text-lightBrown text-base"
                     key={item.id}
                   >
-                    {item.title}
+                    <a href={item.link}>{item.title}</a>
+                    
                   </li>
                 ))}
               </ul>

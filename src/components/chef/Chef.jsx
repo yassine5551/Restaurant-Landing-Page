@@ -88,7 +88,7 @@ const Chef = () => {
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.3 }}
               viewport={{ once: true }}
-              className="mt-6 bg-lime-300/50 rounded-xl   w-4/5 h-full  flex justify-center items-center  relative"
+              className="mt-6 bg-lightBrown/50 rounded-xl   w-4/5 h-full  flex justify-center items-center  relative"
             >
               <button
                 onClick={toggle}

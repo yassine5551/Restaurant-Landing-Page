@@ -1,8 +1,5 @@
 import React from "react";
-import g1 from "../../img/gallery/g1.jpg";
-import g2 from "../../img/gallery/g2.webp";
-import g3 from "../../img/gallery/g3.webp";
-import g4 from "../../img/gallery/g4.webp";
+
 import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../../utility/animation";
 const Gallery = () => {
@@ -30,7 +27,7 @@ const Gallery = () => {
             className="div1"
           >
             <img
-              src={g1}
+              src="https://images.unsplash.com/photo-1585694854987-19b609e7721b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D"
               className="w-[350px] h-[250px]  md:w-[350px] md:h-[530px] rounded-md  object-cover"
               alt="gallery"
             />
@@ -45,7 +42,7 @@ const Gallery = () => {
             className="div2"
           >
             <img
-              src={g2}
+              src="https://images.unsplash.com/photo-1588680051507-99b0bda3f498?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudCUyMGdhbGxlcnl8ZW58MHx8MHx8fDA%3D"
               className="w-[350px] h-[250px] md:w-[350px] md:h-[265px] rounded-md object-cover"
               alt="gallery"
             />
@@ -60,7 +57,7 @@ const Gallery = () => {
             className="div3"
           >
             <img
-              src={g3}
+              src="https://images.unsplash.com/photo-1614082636396-f8927eb06739?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc3RhdXJhbnQlMjBnYWxsZXJ5fGVufDB8fDB8fHww"
               className="w-[350px] h-[250px]  md:w-[350px] md:h-[265px] rounded-md object-cover"
               alt="gallery"
             />
@@ -73,7 +70,7 @@ const Gallery = () => {
             className="div4"
           >
             <img
-              src={g4}
+              src="https://images.unsplash.com/photo-1719396923516-02856fd16f1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc3RhdXJhbnQlMjBnYWxsZXJ5fGVufDB8fDB8fHww"
               className="w-[350px] h-[250px] md:w-[350px] md:h-[530px] rounded-md object-cover"
               alt="gallery"
             />
