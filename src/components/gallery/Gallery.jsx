@@ -18,7 +18,7 @@ const Gallery = () => {
           Gallery
         </motion.h1>
 
-        <div class="parent">
+        <div className="parent">
           <motion.div
             variants={SlideRight(0.4)}
             initial="hidden"

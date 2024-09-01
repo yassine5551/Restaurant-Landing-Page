@@ -1,15 +1,19 @@
 import { React, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
 const Form = () => {
   const form = useRef();
   const [submissionMessage, setSubmissionMessage] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_6y9q8pn", "template_cpjj3q8", form.current, {
-        publicKey: "Qeg9LwtRSo-r5xkyG",
-      })
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    
       .then(
         () => {
           setSubmissionMessage("Your message has been sent successfully!");
