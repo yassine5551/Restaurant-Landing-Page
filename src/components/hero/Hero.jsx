@@ -11,7 +11,7 @@ const Hero = () => {
           opacity: 1,
           transition: { delay: 0.9, duration: 1.2, ease: "easeIn" },
         }}
-        className="bg-hero1 bg-cover flex justify-center items-center h-screen"
+        className="  flex justify-center items-center h-screen"
       >
         <motion.div
           variants={SlideDown(1)}

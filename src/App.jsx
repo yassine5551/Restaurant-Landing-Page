@@ -10,9 +10,12 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <div className="overflow-x-hidden">    
+      <div className="overflow-x-hidden">
+        <section
+          id="Home"
+          className="bg-hero1 bg-cover bg-center md:bg-left-top bg-fixed"
+        >
           <Header />
-        <section id='Home'>
           <Hero />
         </section>
         <section className=" mt-[120px]" id="About">
@@ -22,7 +25,7 @@ function App() {
           <Menu />
         </section>
 
-        <section className=" mt-[120px]" >
+        <section className=" mt-[120px]">
           <Chef />
         </section>
         <section className=" mt-[120px]" id="Gallery">

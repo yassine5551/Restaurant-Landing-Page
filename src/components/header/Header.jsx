@@ -56,7 +56,7 @@ const Header = () => {
             {navLinks.map((item) => (
               <motion.li
                 variants={navChildren}
-                className="relative group font-semibold font-petrona text-lightBrown cursor-pointer hover:text-primary text-lg lg:text-xl transition-all ease-in-out"
+                className="relative group font-semibold font-petrona text-lightBrown cursor-pointer  text-lg lg:text-xl transition-all ease-in-out"
                 key={item.id}
               >
                 <div className="absolute bg-lightBrown w-[0%] group-hover:w-full h-[2.5px]  bottom-0 transition-all" ></div>
@@ -69,7 +69,7 @@ const Header = () => {
         <motion.div
           variants={navChildren}
           onClick={toggle}
-          className="md:hidden text-primary text-3xl"
+          className="md:hidden text-lightBrown text-4xl"
         >
           {isOpen ? <FaXmark /> : <RxHamburgerMenu />}
         </motion.div>

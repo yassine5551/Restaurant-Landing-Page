@@ -12,7 +12,6 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-
           className="font-petrona font-semibold text-[30px] sm:text-[40px]  md:text-[50px] lg:text-[60px] xl:text-[70px] text-secondary mb-[30px] tracking-widest"
         >
           Discover Our Story
