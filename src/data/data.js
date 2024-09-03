@@ -1,7 +1,4 @@
-import chef1 from "../img/chef/chef1.png";
-import chef2 from "../img/chef/chef2.png";
-import chef3 from "../img/chef/chef3.png";
-import chef4 from "../img/chef/chef4.png";
+
 export const navLinks = [
   {
     id: 1,
@@ -207,18 +204,29 @@ export const aboutData = [
 export const chefImgs = [
   {
     id: 1,
-    image: chef1,
+    image:
+      "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229631/chef3_kld8pz.png",
   },
   {
     id: 2,
-    image: chef2,
+    image:
+      "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229630/chef4_qf8r7z.png",
   },
   {
     id: 3,
-    image: chef3,
+    image:
+      "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229625/chef2_c86e6k.png",
   },
   {
     id: 4,
-    image: chef4,
+    image:
+      "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229628/chef1_bnd4fz.png",
+  },
+];
+
+export const galleryImg = [
+  {
+    id: 1,
+    img: "",
   },
 ];
