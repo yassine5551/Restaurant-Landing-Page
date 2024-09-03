@@ -11,7 +11,8 @@
     
 }
 body{
-    background-color: #F8F3F2;
+    /* background-color: #F8F3F2; */
+    background-color: white;
 }
 html{
   scroll-snap-type: y mandatory;
