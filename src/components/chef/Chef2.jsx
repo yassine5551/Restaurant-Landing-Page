@@ -15,7 +15,7 @@ const Chef = () => {
         {/* left side     */}
 
         <motion.img
-          variants={SlideRight(0.4)}
+          variants={SlideLeft(0.4)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
