@@ -1,23 +1,22 @@
 import React from "react";
-
-import { motion } from "framer-motion";
+import { galleryImg } from "../../data/data";
+import { motion, stagger } from "framer-motion";
 import { SlideLeft, SlideRight } from "../../utility/animation";
 const Gallery = () => {
   return (
     <>
-      <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{
-          opacity: 1,
-          transition: { duration: 1.2, delay: 0.4 },
-        }}
-        viewport={{ once: true }}
-        className="text-secondary font-petrona font-semibold text-[50px] text-center"
-      >
-        Gallery
-      </motion.h1>
-      <div className="">
-        {}
+      <div className="w-screen flex flex-col md:flex-row ">
+        {galleryImg.map((item) => (
+          <>
+            <div key={item.id} className="w-full">
+              <img
+                src={item.img}
+                alt=""
+                className="w-full h-full object-cover rounded-sm"
+              />
+            </div>
+          </>
+        ))}
       </div>
     </>
   );

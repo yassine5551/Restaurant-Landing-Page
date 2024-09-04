@@ -6,7 +6,7 @@ export default {
     extend: {
       backgroundImage: {
         hero1: "url('./img/hero/hero1.jpg')",
-        card1:"url('https://res.cloudinary.com/dkusr7var/image/upload/v1725405036/brooke-lark-08bOYnH_r_E-unsplash_lugfpc.jpg')"
+        // card1:"url('https://res.cloudinary.com/dkusr7var/image/upload/v1725405036/brooke-lark-08bOYnH_r_E-unsplash_lugfpc.jpg')"
       },
       colors: {
         primary: "#76453B",

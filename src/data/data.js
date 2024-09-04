@@ -1,4 +1,5 @@
 
+
 export const navLinks = [
   {
     id: 1,
@@ -227,6 +228,11 @@ export const chefImgs = [
 export const galleryImg = [
   {
     id: 1,
-    img: "",
+    img: "https://res.cloudinary.com/dkusr7var/image/upload/f_auto,q_auto/huan-yu-b82VRWyYmPM-unsplash_sfqzwo",
   },
+  {
+    id: 2,
+    img: "https://res.cloudinary.com/dkusr7var/image/upload/f_auto,q_auto/ambitious-studio-rick-barrett-4GNyMaoOV8c-unsplash_ik0yno",
+  },
+ 
 ];

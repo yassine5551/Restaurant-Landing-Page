@@ -36,17 +36,14 @@ const Header = () => {
         variants={navVariants}
         initial="hidden"
         animate="visible"
-        className="container flex justify-between items-center h-10 py-9"
+        className="container  flex justify-end items-center pt-4"
       >
         {/* logo section */}
-        <div className="cursor-pointer">
-          <h1 className="font-boogaloo text-3xl text-center text-lightBrown underline hover:ml-6 transition-all ease-in-out">
-            <span className="text-secondary underline">Master Chef</span>
-            Andalouse
-          </h1>
-        </div>
+        {/* <div className="cursor-pointer flex justify-center items-center ">
+          <img src={logo} width={150} height={150} alt="" />
+        </div> */}
         {/* navlinks section */}
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <motion.ul
             variants={navVariants}
             initial="hidden"
@@ -64,12 +61,12 @@ const Header = () => {
               </motion.li>
             ))}
           </motion.ul>
-        </div>
+        </div> */}
         {/* hamburger menu */}
         <motion.div
           variants={navChildren}
           onClick={toggle}
-          className="md:hidden text-lightBrown text-4xl"
+          className=" text-white text-4xl md:text-6xl cursor-pointer hover:text-secondary"
         >
           {isOpen ? <FaXmark /> : <RxHamburgerMenu />}
         </motion.div>
@@ -83,7 +80,7 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             className="absolute top-20 left-0 w-full h-screen z-20"
           >
-            <div className="text-xl font-semibold uppercase bg-primary text-white py-10 m-6 rounded-3xl">
+            <div className="text-xl font-semibold uppercase bg-primary/80 text-white py-10 m-6 rounded-3xl">
               <ul className="flex flex-col justify-center items-center gap-6">
                 {navLinks.map((item) => (
                   <li
