@@ -45,9 +45,18 @@ const Footer = () => {
               <li>
                 <a
                   className="text-lightBrown transition hover:text-primary font-petrona font-medium"
-                  href="#About"
+                  href="#Home"
                 >
                   
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a
+                  className="text-lightBrown transition hover:text-primary font-petrona font-medium"
+                  href="#About"
+                >
                   About
                 </a>
               </li>
@@ -57,17 +66,8 @@ const Footer = () => {
                   className="text-lightBrown transition hover:text-primary font-petrona font-medium"
                   href="#Menu"
                 >
-                  Menu
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-lightBrown transition hover:text-primary font-petrona font-medium"
-                  href="#Gallery"
-                >
                   
-                  Gallery
+                  Menu
                 </a>
               </li>
 

@@ -1,11 +1,12 @@
-import About from "./components/about/About";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import Menu from "./components/menu/Menu";
-import Chef from "./components/chef/Chef";
-import Gallery from "./components/gallery/Gallery";
-import Form from "./components/form/Form";
-import Footer from "./components/footer/Footer";
+import { lazy } from "react";
+const Header = lazy(() => import("./components/header/Header"));
+const Hero = lazy(() => import("./components/hero/Hero"));
+const About = lazy(() => import("./components/about/About"));
+const Menu = lazy(() => import("./components/menu/Menu"));
+const Chef = lazy(() => import("./components/chef/Chef"));
+const Chef2 = lazy(() => import("./components/chef/Chef2"));
+const Form = lazy(() => import("./components/form/Form"));
+const Footer = lazy(() => import("./components/footer/Footer"));
 
 function App() {
   return (
@@ -28,9 +29,10 @@ function App() {
         <section className=" mt-[120px]">
           <Chef />
         </section>
-        <section className=" mt-[120px]" id="Gallery">
-          <Gallery />
+        <section className=" mt-[120px]">
+          <Chef2 />
         </section>
+
         <section className=" mt-[120px]" id="Contact">
           <Form />
         </section>

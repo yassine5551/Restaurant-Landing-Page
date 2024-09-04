@@ -38,31 +38,7 @@ const Header = () => {
         animate="visible"
         className="container  flex justify-end items-center pt-4"
       >
-        {/* logo section */}
-        {/* <div className="cursor-pointer flex justify-center items-center ">
-          <img src={logo} width={150} height={150} alt="" />
-        </div> */}
-        {/* navlinks section */}
-        {/* <div className="hidden md:block">
-          <motion.ul
-            variants={navVariants}
-            initial="hidden"
-            animate="visible"
-            className="flex justify-center items-center gap-9"
-          >
-            {navLinks.map((item) => (
-              <motion.li
-                variants={navChildren}
-                className="relative group font-semibold font-petrona text-lightBrown cursor-pointer  text-lg lg:text-xl transition-all ease-in-out"
-                key={item.id}
-              >
-                <div className="absolute bg-lightBrown w-[0%] group-hover:w-full h-[2.5px]  bottom-0 transition-all" ></div>
-                <a href={item.link}>{item.title}</a>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div> */}
-        {/* hamburger menu */}
+      
         <motion.div
           variants={navChildren}
           onClick={toggle}

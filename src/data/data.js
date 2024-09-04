@@ -1,5 +1,3 @@
-
-
 export const navLinks = [
   {
     id: 1,
@@ -16,13 +14,9 @@ export const navLinks = [
     title: "Menu",
     link: "#Menu",
   },
+
   {
     id: 4,
-    title: "Gallery",
-    link: "#Gallery",
-  },
-  {
-    id: 5,
     title: "Contact",
     link: "#Contact",
   },
@@ -223,16 +217,4 @@ export const chefImgs = [
     image:
       "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229628/chef1_bnd4fz.png",
   },
-];
-
-export const galleryImg = [
-  {
-    id: 1,
-    img: "https://res.cloudinary.com/dkusr7var/image/upload/f_auto,q_auto/huan-yu-b82VRWyYmPM-unsplash_sfqzwo",
-  },
-  {
-    id: 2,
-    img: "https://res.cloudinary.com/dkusr7var/image/upload/f_auto,q_auto/ambitious-studio-rick-barrett-4GNyMaoOV8c-unsplash_ik0yno",
-  },
- 
 ];
