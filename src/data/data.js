@@ -218,3 +218,51 @@ export const chefImgs = [
       "https://res.cloudinary.com/dkusr7var/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1725229628/chef1_bnd4fz.png",
   },
 ];
+
+export const AutoRun = [
+  {
+    id: 1,
+    image:
+      "https://images.pexels.com/photos/8178892/pexels-photo-8178892.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.pexels.com/photos/8511857/pexels-photo-8511857.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.pexels.com/photos/5894552/pexels-photo-5894552.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 4,
+    image:
+      "https://images.pexels.com/photos/9424930/pexels-photo-9424930.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 5,
+    image:
+      "https://images.pexels.com/photos/6927881/pexels-photo-6927881.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 6,
+    image:
+      "https://images.pexels.com/photos/6588491/pexels-photo-6588491.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 7,
+    image:
+      "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 8,
+    image:
+      "https://images.pexels.com/photos/541216/pexels-photo-541216.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 9,
+    image:
+      "https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+];

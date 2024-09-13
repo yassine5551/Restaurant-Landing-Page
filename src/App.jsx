@@ -19,7 +19,7 @@ function App() {
           <Header />
           <Hero />
         </section>
-        <section className=" mt-[120px]" id="About">
+        <section className="mt-8" id="About">
           <About />
         </section>
         <section className="mt-[120px]" id="Menu">

@@ -1,11 +1,29 @@
 import React from "react";
-import { aboutData } from "../../data/data";
+import { aboutData, AutoRun } from "../../data/data";
 import { motion } from "framer-motion";
 import { SlideRight, SlideDown } from "../../utility/animation";
 
 const About = () => {
+  const customStyle = {
+    "--time": "14s",
+    "--quantity": 9,
+  };
+  
   return (
     <>
+      <div className="slider mb-5 w-full h-[250px] md:h-[300px]">
+        <ul style={customStyle} className="w-full relative">
+          {AutoRun.map((item, index) => (
+            <li
+              className="w-[250px] absolute left-[100%]"
+              key={index}
+              style={{ "--index": index + 1 }}
+            >
+              <img src={item.image} className="object-contain" />
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="container">
         <motion.h1
           variants={SlideDown(0.5)}

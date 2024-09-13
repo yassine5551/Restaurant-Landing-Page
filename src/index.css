@@ -58,3 +58,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+.slider{
+  
+  overflow: hidden;
+}
+
+.slider ul{
+  
+  min-width: calc(250px * var(--quantity));
+  
+}
+
+.slider ul li{
+  animation: AutoRun var(--time) linear infinite;
+  animation-delay: calc(var(--time)/var(--quantity) * (var(--index) - 1) - 9s);
+}
+
+@keyframes AutoRun {
+  to{
+    left: -250px;
+  }
+}
